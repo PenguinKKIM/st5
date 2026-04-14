@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>하이퍼링크 / 블록vs인라인</title>
+    <style>
+      img {
+        width: 250px;
+      }
+    </style>
   </head>
   <body>
     <h1>하이퍼링크</h1>
@@ -25,6 +30,21 @@
       <li><pre>href = "url"</pre></li>
     </ul>
     <h3>하이퍼링크 연습</h3>
-    <a href=""></a>
+    <a href="https://www.naver.com" title="마우스 호버시 툴팁">화면에 표시 될 내용</a>
+    <!--target="_blank" 새창에서 열기 
+        target="_self" 기존창에서 열림 (기본값)
+        target="_blank"-->
+    <a href="https://www.naver.com" title="마우스 호버시 툴팁" target="_blank">화면에 표시 될 내용</a>
+    <hr />
+    <h3>이미지에 하이퍼링크</h3>
+    <a href="https://www.google.com"
+      ><img
+        src="https://i.namu.wiki/i/zwJ4OQoGwRXpyyCek8BZth8PRLUvlMcmVBDKMEGG7S50H_RI3kIBtLITw4XPb_ul23UWKEW-XRS5uBIsxhKjcF4GSG0gHte5qpWxjaNRtBuBqbK3Mjv1-XAN0ezDhgxYylghmfN_32oOoM9DyPLmjg.svg"
+        alt="구글 로고"
+    /></a>
+    <h3>전화연결</h3>
+    <a href="tel:000-0000-0000">000-0000-0000</a>
+    <h3>인터넷 상의 파일이 아닌 동일컴의 파일 연결</h3>
+    <a href="./relativePath.html">상대경로 이동</a>
   </body>
 </html>
