@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 선택자</title>
+    <style>
+      /* 태그선택자 {}*/
+      h2 {
+        color: #86f;
+      }
+      .title {
+        color: #f68;
+      }
+      div.title {
+        color: #8f6;
+      }
+      #section1 {
+        border: 1px solid #000;
+      }
+      .box > p {
+        color: rgb(0, 157, 255);
+      }
+      /* .box > p:nth-of-type(2n) {
+        color: rgb(0, 190, 44);
+      } */
+
+      /* section > p  */
+      /* section > .title  */
+      section > .title {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header></header>
+      <div class="container">
+        <section id="section1">
+          <div class="title">section1</div>
+          <div class="box">
+            <h2>신상품</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+          </div>
+        </section>
+        <section id="section2">
+          <p class="title">section2</p>
+          <div class="box">
+            <h2>신상품</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+          </div>
+          <p>section2 마지막</p>
+        </section>
+        <section id="section3">
+          <p class="title">section3</p>
+          <div class="box">
+            <h2>신상품</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+          </div>
+        </section>
+      </div>
+      <footer></footer>
+    </div>
+    <!-- //#wrap : 마감이라는 뜻-->
+  </body>
+</html>

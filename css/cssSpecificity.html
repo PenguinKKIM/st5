@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자 우선순위</title>
+    <style>
+      /* 조상의 값을 상속, 부모 자식 */
+      /* 우선순위값이 높은것이됨 */
+      /* !important > 인라인(1000) > 아이디(100) > 클래스(10) > 태그(1) */
+      .box p {
+        color: dodgerblue !important;
+      }
+      .title {
+        color: green;
+      }
+      p {
+        color: skyblue;
+      }
+      div {
+        color: red;
+      }
+      div {
+        color: blue;
+      }
+      p {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam aspernatur quas porro officiis excepturi ipsum similique eum? Exercitationem saepe cupiditate voluptate rem recusandae
+      officiis libero quos suscipit hic porro?
+    </p>
+    <div class="box">
+      <!-- 인라인스타일 -->
+      <p class="title" style="color: teal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, delectus!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, delectus!</p>
+    </div>
+  </body>
+</html>
