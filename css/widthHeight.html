@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>너비 높이 지정</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: #ccc;
+        margin: 50px 0;
+
+        /* min-width: none; < 기본값 */
+        /* width: auto; < 기본값*/
+        min-width: 800px;
+        max-width: 1000px;
+        width: 70%;
+
+        /*높이는 자식요소의 크기 
+          높이는 포함내용(contant)의 크기만큼 높이
+          높이는 자식요소에 의해 결정*/
+
+        min-height: 50px;
+        /* 자식의 요소 상관없이 최대크기 제한 (튀어나감) */
+        max-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">box1</div>
+    <div class="box box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta porro cum minima maiores consectetur! Ad consectetur adipisci, voluptas eos soluta molestias cum quae distinctio suscipit
+      repellat expedita ab unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta porro cum minima maiores consectetur! Ad consectetur adipisci, voluptas eos soluta molestias cum
+      quae distinctio suscipit repellat expedita ab unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta porro cum minima maiores consectetur! Ad consectetur adipisci, voluptas
+      eos soluta molestias cum quae distinctio suscipit repellat expedita ab unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta porro cum minima maiores consectetur! Ad
+      consectetur adipisci, voluptas eos soluta molestias cum quae distinctio suscipit repellat expedita ab unde!
+    </div>
+    <div class="box box3">box3</div>
+    <div class="box box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, pariatur! Quaerat ipsa corporis labore quia voluptatem accusantium inventore enim laborum.</div>
+  </body>
+</html>
