@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여백겹침</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #ccc;
+      }
+      header {
+        background-color: white;
+        padding: 1rem 0;
+        border-bottom: 1px solid cornflowerblue;
+      }
+      header .inner {
+        background-color: #c7d9ff;
+        min-width: 600px;
+        width: 90%;
+        /* 마진의 바깥영역을 반으로 나누어 조절 */
+        margin: 0 auto;
+        padding: 50px 0;
+      }
+      header .inner .child {
+        padding: 1rem;
+      }
+      header .inner .child1 {
+        background-color: #68f;
+      }
+      header .inner .child2 {
+        background-color: #f68;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="child child1">내용</div>
+        <div class="child child2">내용</div>
+      </div>
+    </header>
+  </body>
+</html>

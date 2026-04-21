@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델계산</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        margin: 50px;
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+      }
+      .box1 {
+        padding: 10px 20px;
+      }
+      .box2 {
+        padding: 10px 20px;
+        box-sizing: content-box;
+      }
+      .box3 {
+        padding: 10px 20px;
+        box-sizing: border-box;
+      }
+      .box4 {
+        /* box-sizing: border-box; */
+        box-sizing: content-box;
+        width: 300px;
+        border: 10px solid black;
+        /* em :  font-size 부모를 기준
+        박스모델 : 자신의 글자크기 */
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 블록레벨은 상하마진이 겹친다 -->
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque quis nesciunt dolorem dicta hic!</div>
+    <div class="box box2">Voluptatum itaque alias illum sapiente, quos autem nobis iste voluptates atque explicabo, repudiandae cum iusto.</div>
+    <div class="box box3">Temporibus incidunt, earum, itaque, iste aliquid cupiditate repellat at cumque sed deleniti laboriosam deserunt recusandae.</div>
+    <div class="box box4">Delectus possimus autem obcaecati quae. Laborum soluta minima sequi odio hic, quod perferendis facere est.</div>
+  </body>
+</html>
