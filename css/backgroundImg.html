@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경이미지</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      height: 300px;
+      border: 10px dotted rgba(0, 0, 0, 0.5);
+      background-color: #ff3;
+      background-image: url(images/flower.png);
+      background-image: url(images/bg.jpg);
+      background-image: none; /*기본값, 초기값*/
+    }
+    .box1 {
+      width: 500px;
+      background-clip: content-box;
+    }
+    .box2 {
+      width: 80%;
+    }
+    .box3 {
+      width: 40em;
+    }
+  </style>
+  <body>
+    <div class="container-wrap">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+    </div>
+  </body>
+</html>

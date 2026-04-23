@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상클래스 링크관련a</title>
+    <style>
+      /* 가상클래스: 콜론 1개 (:) 요소의 상태 위치 선택 */
+      가상요소 * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        color: #333;
+      }
+      li {
+        color: #68f;
+      }
+      :link {
+        color: #333;
+      }
+      /* a태그는 기본 글자 파란색
+      방문한적있는 사이트는 보라색
+      active 는 빨간색*/
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* 순서가 중요함
+      :linK > :visited > :hover > :active > :focus */
+      a:link,
+      a:visited {
+        color: #333;
+      }
+      a:hover {
+        color: #68f;
+      }
+      a:active {
+        color: blue;
+      }
+      ul,
+      ol,
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>가상선택자</li>
+      <li><a href="https://www.naver.com">메뉴1 </a></li>
+      <li><a href="https://www.google.com">메뉴2</a></li>
+      <li><a href="https://www.daum.net">메뉴3</a></li>
+    </ul>
+  </body>
+</html>
