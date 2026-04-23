@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-attachment 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container-wrap {
+        margin: 0;
+        background-color: #ccc;
+      }
+      .container-wrap > section {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+        height: 100vh;
+        background-image: url(images/bg.jpg);
+        background-image: url(images/sun.png);
+        background-repeat: no-repeat;
+        background-color: #ccc;
+      }
+      .container-wrap > .section1 {
+        background-color: rgba(255, 136, 102, 0.2);
+        /* background-image: none; */
+      }
+      .container-wrap > .section2 {
+        background-color: rgba(102, 136, 255, 0.2);
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .container-wrap > .section3 {
+        background-color: rgba(102, 255, 136, 0.2);
+        background-position: 100% 0;
+        /* background-image: none;
+        background-color: aquamarine; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-wrap">
+      <section class="section1">
+        <p class="title">setion1</p>
+      </section>
+      <section class="section2">
+        <p class="title">setion2</p>
+      </section>
+      <section class="section3">
+        <p class="title">setion3</p>
+      </section>
+    </div>
+  </body>
+</html>
