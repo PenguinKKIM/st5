@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록CSS</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* ol,
+    ul {
+      border: 1px solid red;
+    } */
+
+    .exam2 > ol,
+    .exam2 > ul {
+      list-style: none;
+    }
+
+    .exam2 li {
+      background-image: url(images/arrow_right.png);
+      background-repeat: no-repeat;
+      padding-left: 24px;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>memu1</li>
+      <li>memu2</li>
+      <li>memu3</li>
+    </ul>
+    <ol>
+      <li>memu1</li>
+      <li>memu2</li>
+      <li>memu3</li>
+    </ol>
+    <div class="exam2">
+      <ol>
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+      </ol>
+
+      <ul class="exam2">
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+      </ul>
+    </div>
+  </body>
+</html>

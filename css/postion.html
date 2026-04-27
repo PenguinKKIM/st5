@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .thumb {
+      position: relative;
+      width: 50%;
+    }
+
+    .thumb img {
+      display: block;
+      width: 100%;
+    }
+
+    .thumb > div {
+      position: absolute;
+    }
+
+    .thumb > .inner__top {
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .thumb > .inner__middle {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .thumb:hover .inner__middle {
+      display: flex;
+    }
+
+    .thumb button {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+    }
+
+    .thumb button:hover {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="thumb">
+        <img src="images/test-img.png" alt="모델이미지" />
+        <div class="inner__top">
+          <button>좋아요</button>
+          <button>10%</button>
+        </div>
+        <div class="inner__middle">
+          <button>wish</button>
+          <button>add</button>
+          <button>option</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
