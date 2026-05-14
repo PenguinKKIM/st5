@@ -1,10 +1,15 @@
-// JavaScript for Accordion functionality
-// Add event listeners to toggle accordion content
-const accordionHeaders = document.querySelectorAll(".accordion-header");
-
-accordionHeaders.forEach((header) => {
-  header.addEventListener("click", () => {
+// FAQ 아코디언 ui
+// 기본은 아코디언 콘텐츠는 숨김
+// 클릭시 해당 콘텐츠 표시하고 나머는 숨김
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
     const content = header.nextElementSibling;
-    content.style.display = content.style.display === "none" ? "block" : "none";
+    const isActive = content.style.display === 'block';
+    
+    // 모든 콘텐츠 숨김
+    document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+    
+    // 클릭한 콘텐츠 토글
+    content.style.display = isActive ? 'none' : 'block';
   });
 });
